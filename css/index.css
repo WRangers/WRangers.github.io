@@ -381,6 +381,7 @@ span,
     width: 100%;
     padding-left: 0;
     padding-right: 0;
+    text-align: center;
     color: #000;
   }
   .author-discrip .author-bio {
@@ -394,8 +395,9 @@ span,
   .social-icons {
     display: block;
     position: relative;
+    text-align: center;
     width: auto;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     border: 0;
     background: transparent;
@@ -410,7 +412,8 @@ span,
     padding: 0;
   }
   .cv-links {
-    margin: 0;
+    text-align: center;
+    margin: 0 auto;
   }
 }
 #page_footer {
