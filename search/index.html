@@ -212,66 +212,59 @@
 
 
     </main>
-    <footer>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
+<script src="/js/no-copy.js"></script>
+
+<style>
+  .top-tip {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #800020;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 0;
+    font-size: 16px;
+    z-index: 9999;
+    opacity: 0.96;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    transition: top 0.4s, opacity 0.4s;
+  }
+
+  .top-tip.hide {
+    top: -60px;
+    opacity: 0;
+  }
+</style>
+<div id="top-tip" class="top-tip" style="display:none"></div>
+<script>
+  function showTopTip(msg, duration = 2000) {
+    var tip = document.getElementById('top-tip');
+    tip.innerText = msg;
+    tip.style.display = 'block';
+    tip.classList.remove('hide');
+    setTimeout(function () {
+      tip.classList.add('hide');
+      setTimeout(function () {
+        tip.style.display = 'none';
+      }, 400);
+    }, duration);
+  }
+</script>
+
+<footer>
   <div class="inner">
-    <div class="links">
-      
-      <div class="group">
-        <h2 class="title">Blog</h2>
-        
-        <a href="/" class="item">Home</a>
-        
-        <a href="/archives" class="item">Archives</a>
-        
-        <a href="/tags" class="item">Tags</a>
-        
-        <a href="/categories" class="item">Categories</a>
-        
-        <a href="/search" class="item">Search</a>
-        
-        <a href="/friends" class="item">Friends</a>
-        
-        <a href="/projects" class="item">Projects</a>
-        
-        <a href="/resume" class="item">Resume</a>
-        
-        <a href="/about" class="item">About</a>
-        
-        <a href="/atom.xml" class="item">RSS</a>
-        
-      </div>
-      
-      <div class="group">
-        <h2 class="title">Projects</h2>
-        
-        <a target="_blank" rel="noopener" href="https://github.com/MrWillCom/hexo-theme-cupertino" class="item">Hexo Theme Cupertino</a>
-        
-        <a target="_blank" rel="noopener" href="https://github.com/MrWillCom/next-mastodon-gallery" class="item">Next Mastodon Gallery</a>
-        
-      </div>
-      
-      <div class="group">
-        <h2 class="title">Me</h2>
-        
-        <a target="_blank" rel="noopener" href="https://github.com/MrWillCom" class="item">GitHub</a>
-        
-        <a target="_blank" rel="noopener" href="https://codepen.io/mrwillcom" class="item">CodePen</a>
-        
-        <a target="_blank" rel="noopener" href="https://www.patreon.com/MrWillCom" class="item">Patreon</a>
-        
-        <a target="_blank" rel="noopener" href="https://noc.social/@MrWillCom" class="item">Mastodon</a>
-        
-        <a href="mailto:mr.will.com@outlook.com" class="item">Email</a>
-        
-      </div>
-      
-    </div>
-    <span>&copy; 2025 Junxu Wang<br>Powered by <a href="http://hexo.io/" target="_blank">Hexo</a></span>
     
-    
+        <span>
+          Half Technology, Half Art.<br>
+            2020-2025 &copy;
+              Junxu Wang | Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+        </span>
+        
+            
   </div>
 </footer>
-
 
     
 <script src="/js/main.js"></script>
