@@ -1,0 +1,358 @@
+<!DOCTYPE html><html lang="en"><head prefix="og: https://ogp.me/ns#">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  
+  <title>Hexo排版设计 - J. WANG</title>
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+  <link rel="manifest" href="/manifest.json">
+  
+
+  <meta name="description" content="内容块
+ 使用hexo-admonition插件实现内容块功能。
+ 1234!!! note Hexo-admonition插件    这是基于hexo-admonition插件渲染的一条提示信息。类型为note，并设置了自定义标题。    提示内容开头留4个空格，可以有多行，最后用空行结束此标记。
+ 
+ 
+ Hexo-admonition插件
+ 
+ 
+ 这是基于hexo-admonition插件">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo排版设计">
+<meta property="og:url" content="http://example.com/2025/05/24/hexo-typography/index.html">
+<meta property="og:site_name" content="J. WANG">
+<meta property="og:description" content="内容块
+ 使用hexo-admonition插件实现内容块功能。
+ 1234!!! note Hexo-admonition插件    这是基于hexo-admonition插件渲染的一条提示信息。类型为note，并设置了自定义标题。    提示内容开头留4个空格，可以有多行，最后用空行结束此标记。
+ 
+ 
+ Hexo-admonition插件
+ 
+ 
+ 这是基于hexo-admonition插件">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2025-05-24T00:12:09.000Z">
+<meta property="article:modified_time" content="2025-05-24T07:31:05.605Z">
+<meta property="article:author" content="Junxu Wang">
+<meta name="twitter:card" content="summary">
+
+  
+  
+<link rel="stylesheet" href="https://unpkg.com/simple-icons-font@v13/font/simple-icons.min.css">
+
+  
+  
+  
+<link rel="stylesheet" href="https://unpkg.com/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  
+
+  
+<link rel="stylesheet" href="/css/var.css">
+
+  
+<link rel="stylesheet" href="/css/main.css">
+
+  
+<link rel="stylesheet" href="/css/typography.css">
+
+  
+<link rel="stylesheet" href="/css/code-highlighting.css">
+
+  
+  
+  
+<link rel="stylesheet" href="/css/components/card.css">
+
+  
+  
+  
+  
+<link rel="stylesheet" href="/css/components/button.css">
+
+  
+  
+  
+  
+<link rel="stylesheet" href="/css/components/badge.css">
+
+  
+  
+  
+  
+<link rel="stylesheet" href="/css/components/utilities.css">
+
+  
+  
+  
+<link rel="stylesheet" href="/css/nav.css">
+
+  
+<link rel="stylesheet" href="/css/paginator.css">
+
+  
+<link rel="stylesheet" href="/css/footer.css">
+
+  
+<link rel="stylesheet" href="/css/post-list.css">
+
+  
+  
+<link rel="stylesheet" href="/css/rainbow-banner.css">
+
+  
+  
+  
+<link rel="stylesheet" href="/css/toc.css">
+
+  
+  
+    
+<link rel="stylesheet" href="/css/giscus.css">
+
+  
+  
+  
+  
+<link rel="stylesheet" href="/css/post.css">
+
+  
+  
+  
+  
+  
+  
+  
+<link rel="stylesheet" href="/css/scroll-reveal.css">
+
+  
+  
+  
+<link rel="stylesheet" href="/css/view-transition.css">
+
+  
+  
+  <script src="https://unpkg.com/lenis@1.1.9/dist/lenis.min.js"></script>
+  
+<link rel="stylesheet" href="https://unpkg.com/lenis@1.1.9/dist/lenis.css">
+
+  
+<script src="/js/smooth-scroll.js"></script>
+
+  
+
+  
+
+  <script>var ThemeCupertino = {}</script>
+  
+<!-- hexo injector head_end start --><style>
+body hanla:after {
+    content: ' ';
+    display: inline;
+    font-family: inherit;
+    font-size: 0.45em;
+}
+
+html code hanla,
+html pre hanla,
+html kbd hanla,
+html samp hanla,
+html ruby hanla,
+html .tag-list-item hanla {
+    display: none;
+}
+
+html ol > hanla,
+html ul > hanla {
+    display: none;
+}
+</style><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"></head>
+
+  <body data-color-scheme="auto" data-uppercase-categories="true" data-rainbow-banner="true" data-rainbow-banner-shown="auto" data-rainbow-banner-month="6" data-rainbow-banner-colors="#e50000,#ff8d00,#ffee00,#008121,#004cff,#760188" data-config-root="/" data-toc="true" data-toc-max-depth="2" data-scroll-reveal-disappear="false" data-scroll-reveal-query=".scroll-reveal, .post-list-item, .card, .content p img, .content .block-large img">
+    <a href="#main-content" id="skip-to-content">Skip to content</a>
+    <nav id="theme-nav">
+  <div class="inner">
+    <a class="title" href="/">J. Wang</a>
+    <div class="nav-arrow"></div>
+    <div class="nav-items">
+      <a class="nav-item nav-item-home" href="/" style="--index: 0">Home</a>
+
+      
+      <a class="nav-item" href="/categories" style="--index: 1">Categories</a>
+      
+      <a class="nav-item" href="/portfolios" style="--index: 2">Portfolios</a>
+      
+      <a class="nav-item" href="/archives" style="--index: 3">Archives</a>
+      
+      <a class="nav-item" href="/about" style="--index: 4">About</a>
+      
+      <a class="nav-item is-icon" target="_blank" rel="noopener" href="https://github.com/WRangers" style="--index: 5"><i class="si si-github"></i></a>
+      
+      <a class="nav-item is-icon" href="/search" style="--index: 6"><i class="bi bi-search"></i></a>
+      
+    </div>
+  </div>
+</nav>
+
+    <main id="main-content">
+      
+<link rel="stylesheet" href="/css/admonition.css">
+
+
+<article class="post">
+  <div class="meta">
+    
+    <div class="categories text-uppercase">
+    
+      <a href="/categories/Hexo/">Hexo</a>
+    
+    </div>
+    
+
+    
+    <time class="date" datetime="2025-05-24T08:12:09+08:00">
+      May 24, 2025
+    </time>
+    
+
+    <h1 class="title">Hexo<hanla></hanla>排版设计</h1>
+  </div>
+
+  <div class="content">
+    <h1 id="内容块">内容块</h1>
+<p>使用<hanla></hanla><a target="_blank" rel="noopener" href="https://github.com/lxl80/hexo-admonition">hexo-admonition</a><hanla></hanla>插件实现内容块功能。</p>
+<figure class="highlight md"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">!!! note Hexo-admonition<hanla></hanla>插件</span><br><span class="line"><span class="code">    这是基于<hanla></hanla>hexo-admonition<hanla></hanla>插件渲染的一条提示信息。类型为<hanla></hanla>note，并设置了自定义标题。</span></span><br><span class="line"><span class="code"></span></span><br><span class="line"><span class="code">    提示内容开头留<hanla></hanla>4<hanla></hanla>个空格，可以有多行，最后用空行结束此标记。</span></span><br></pre></td></tr></tbody></table></figure>
+<div class="admonition note">
+<p class="admonition-title">
+Hexo-admonition<hanla></hanla>插件
+</p>
+<p>
+这是基于<hanla></hanla>hexo-admonition<hanla></hanla>插件渲染的一条提示信息。类型为<hanla></hanla>note，并设置了自定义标题。
+</p>
+<p>
+提示内容开头留<hanla></hanla>4<hanla></hanla>个空格，可以有多行，最后用空行结束此标记。
+</p>
+</div>
+<p>类型：<code>note</code>, <code>info</code>, <code>todo</code>,
+<code>warning</code>, <code>attention</code>, <code>caution</code>,
+<code>error</code>, <code>failure</code>, <code>missing</code>,
+<code>fail</code></p>
+<h1 id="cjk字符与西文字符自动添加间距">CJK<hanla></hanla>字符与西文字符自动添加间距</h1>
+<p>使用<hanla></hanla><a target="_blank" rel="noopener" href="https://github.com/Cerallin/hexo-filter-text-autospace">hexo-filter-text-autospace</a><hanla></hanla>插件在<hanla></hanla>CJK<hanla></hanla>字符和西文字符之间自动添加间距。</p>
+<ul>
+<li>安装 <figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-filter-text-autospace</span><br></pre></td></tr></tbody></table></figure></li>
+<li>配置（修改<hanla></hanla>Hexo<hanla></hanla>根目录的<hanla></hanla><code>_config.yml</code><hanla></hanla>配置文件）
+<figure class="highlight yml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">text_autospace_filter:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">inject_css:</span> <span class="literal">true</span>  <span class="comment"># 是否注入<hanla></hanla>css</span></span><br><span class="line">  <span class="attr">tag_name:</span> <span class="string">'hanla'</span> <span class="comment"># 给间距定义的标签名</span></span><br><span class="line">  <span class="attr">entry:</span> <span class="string">'body'</span>     <span class="comment"># 选择要添加间距的元素（也可以是<hanla></hanla>id<hanla></hanla>或<hanla></hanla>class）</span></span><br></pre></td></tr></tbody></table></figure> 更多配置说明见插件主页。</li>
+</ul>
+<h1 id="段落两端对齐">段落两端对齐</h1>
+<p>对段落<hanla></hanla><code>p</code><hanla></hanla>样式添加<hanla></hanla><code>text-align: justify;</code>即可。</p>
+<h1 id="参考资料">参考资料</h1>
+<ol type="1">
+<li><a target="_blank" rel="noopener" href="https://github.com/lxl80/hexo-admonition">hexo-admonition</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/Cerallin/hexo-filter-text-autospace">hexo-filter-text-autospace</a></li>
+</ol>
+
+  </div>
+
+  
+
+  <div class="container post-prev-next">
+    
+    <a href="/2025/05/24/hexo-mathjax/" class="next">
+      <div class="text">
+        <p class="label">Next</p>
+        <h3 class="title">Hexo LaTeX<hanla></hanla>数学公式渲染</h3>
+      </div>
+    </a>
+    
+    <a class="prev"></a>
+  </div>
+
+  
+    
+    
+    <script src="https://giscus.app/client.js" data-repo="WRangers/WRangers.github.io" data-repo-id="R_kgDOOrjbAw" data-category="Announcements" data-category-id="DIC_kwDOOrjbA84CqQsI" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="preferred_color_scheme" data-lang="en" data-loading="lazy" crossorigin="anonymous" async=""> </script>
+    
+  
+</article>
+
+
+    </main>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
+<script src="/js/no-copy.js"></script>
+
+<style>
+  .top-tip {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #800020;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 0;
+    font-size: 16px;
+    z-index: 9999;
+    opacity: 0.96;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    transition: top 0.4s, opacity 0.4s;
+  }
+
+  .top-tip.hide {
+    top: -60px;
+    opacity: 0;
+  }
+</style>
+<div id="top-tip" class="top-tip" style="display:none"></div>
+<script>
+  function showTopTip(msg, duration = 2000) {
+    var tip = document.getElementById('top-tip');
+    tip.innerText = msg;
+    tip.style.display = 'block';
+    tip.classList.remove('hide');
+    setTimeout(function () {
+      tip.classList.add('hide');
+      setTimeout(function () {
+        tip.style.display = 'none';
+      }, 400);
+    }, duration);
+  }
+</script>
+
+<footer>
+  <div class="inner">
+    
+        <span>
+          Half Technology, Half Art.<br>
+            2019-2025 ©
+              Junxu Wang | Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+                  &amp; <a href="https://github.com/MrWillCom/hexo-theme-cupertino" target="_blank">Cupertino</a>
+        </span>
+        
+            
+  </div>
+</footer>
+
+    
+<script src="/js/main.js"></script>
+
+
+    
+
+    
+    
+<script src="/js/scroll-reveal.js"></script>
+
+    
+
+    
+
+    
+
+    
+  
+
+</body></html>
